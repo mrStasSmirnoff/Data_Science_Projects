@@ -4,10 +4,23 @@ import numpy as np
 
 
 def cv_roc_auc_acc(model, x_train, y_train, scoring, cv):
+    """
+    Evaluate metric(s) by cross-validation and also record fit/score times.
+
+    :param model: training model
+    :param x_train: The data to fit. Can be for example a list, or an array.
+    :param y_train: The target variable to try to predict
+    :param scoring: scoring function : 'r2', 'neg_mean_squared_error', 'accuracy' etc
+    :param cv: cross-validation splitting strategy
+    :return:
+    """
+
     cross_val = cross_validate(model, x_train, y=y_train, scoring=scoring, cv=cv, n_jobs=-1)
 
     print('ROC AUC value : %f' % (cross_val['test_auc'].mean()))
     print('Accuracy value : %f' % (cross_val['test_acc'].mean()))
+
+    return cross_val
 
 
 def model_evaluation_classification(model, x_train, y_train, X_holdout, y_holdout):

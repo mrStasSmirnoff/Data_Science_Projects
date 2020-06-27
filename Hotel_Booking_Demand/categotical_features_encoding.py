@@ -23,7 +23,7 @@ def to_one_hot_encode_cat_data(dataframe):
     cat_features = get_list_of_cat_features(dataframe)
 
     if len(cat_features) > 0:
-        df_ohe = pd.get_dummies(dataframe, columns = cat_features)
+        df_ohe = pd.get_dummies(dataframe, columns=cat_features)
     else:
         log.info("Dataframe returned without encoding")
         df_ohe = dataframe
