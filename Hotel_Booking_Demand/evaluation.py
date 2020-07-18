@@ -1,4 +1,4 @@
-from sklearn.model_selection import cross_val_score, StratifiedKFold, KFold, train_test_split, cross_validate
+from sklearn.model_selection import cross_val_score, KFold, cross_validate
 from sklearn.metrics import accuracy_score, roc_auc_score, r2_score, mean_absolute_error, mean_squared_error
 import numpy as np
 
@@ -16,9 +16,6 @@ def cv_roc_auc_acc(model, x_train, y_train, scoring, cv):
     """
 
     cross_val = cross_validate(model, x_train, y=y_train, scoring=scoring, cv=cv, n_jobs=-1)
-
-    print('ROC AUC value : %f' % (cross_val['test_auc'].mean()))
-    print('Accuracy value : %f' % (cross_val['test_acc'].mean()))
 
     return cross_val
 
