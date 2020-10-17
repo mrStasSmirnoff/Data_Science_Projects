@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.linear_model import LinearRegression
 
 
 def mean_absolute_percentage_error(y_true, y_pred):
@@ -62,3 +63,14 @@ def time_lags_generation(df, start, end):
         df["lag_{}".format(i)] = df.target.shift(i)
 
     return df
+
+
+def compute_lr_error(x_train, y_train, x_test, y_test):
+    lr = LinearRegression()
+    lr.fit(x_train, y_train)
+
+    prediction = lr.predict(x_test)
+    error = mean_absolute_percentage_error(prediction, y_test)
+
+    return error
+
