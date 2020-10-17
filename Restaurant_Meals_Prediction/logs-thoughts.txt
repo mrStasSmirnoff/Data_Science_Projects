@@ -7,3 +7,38 @@
 since there is not features introduced. 
 
 - v3 - studying different "lags" intervals on the error rate.
+	
+	1,7 => lr: 13,44% ; Lasso: 13.46% 
+	1,14 => lr: 13,21% ; Lasso: 13.06%
+	1,21 => lr: 12,78% ; Lasso: 12.61%
+	1,28 => lr: 13,41% ; Lasso: 12.88%
+	1,42 => lr: 17,31% ; Lasso: 14.78%
+	1,56 => lr: 21,36% ; Lasso: 18.48%
+	
+	7,14 => lr: ; Lasso:
+	7,21 => lr: ; Lasso:
+	7,28 => lr: ; Lasso:
+	7,42 => lr: ; Lasso:
+	7,56 => lr: ; Lasso:
+
+	14,21 => lr: ; Lasso:
+	14,28 => lr: ; Lasso:
+	14,42 => lr: ; Lasso:
+	14,56 => lr: ; Lasso:
+
+
+Possible Features to generate and investigate:
+
+Lags of time series
+
+Window statistics:
+ Max/min value of series in a window
+ Average/median value in a window
+ Window variance
+
+Date and time features:
+ Minute of an hour, hour of a day, day of the week, and so on
+ Is this day a holiday? Maybe there is a special event? Represent that as a boolean feature
+
+Target encoding
+Forecasts from other models (note that we can lose the speed of prediction this way)/stacking
