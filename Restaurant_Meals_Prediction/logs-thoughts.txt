@@ -1,0 +1,9 @@
+- v1 is mostly an econometrics approach which is I gonna put aside for now.
+
+- v2 works with linear models and a few approach to feature engineering. Started with linear regression and lags - from 7(week) to 31(month). Introducing "weekday" and "is_weekend" makes model only performing worse. "is_weekend" increases error from 23.94% to 32.09% and introducing "weekday" makes it even worse to 42.27%. Target encoding of "weekday" dropped error to 34.48%. Implementing Ridge gives 27.95%, Lasso 20.39%. XGboost rises up to 22.67%. 
+
+
+- v2.1 here only the best results of v2 are kept. So no features are added, which bring us the baseline 23.94% with linear regression. No target encoding 
+since there is not features introduced. 
+
+- v3 - studying different "lags" intervals on the error rate.
