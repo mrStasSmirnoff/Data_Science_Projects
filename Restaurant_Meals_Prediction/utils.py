@@ -1,5 +1,4 @@
 import numpy as np
-from sklearn.linear_model import LinearRegression
 
 
 def mean_absolute_percentage_error(y_true, y_pred):
@@ -9,7 +8,6 @@ def mean_absolute_percentage_error(y_true, y_pred):
     :param y_pred: predicted value of the target vector
     :return: metric value (int)
     """
-
 
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
@@ -53,7 +51,6 @@ def time_lags_generation(df, start, end):
 
 
     :param df: one dimensional dataframe (time series)
-    :param y: column to create features from
     :param start: starting value for time shift
     :param end: final value for time shift
     :return: data frame with shifted series
@@ -65,12 +62,40 @@ def time_lags_generation(df, start, end):
     return df
 
 
-def compute_lr_error(x_train, y_train, x_test, y_test):
-    lr = LinearRegression()
-    lr.fit(x_train, y_train)
+def compute_model_error(model, df):
+    """
+    This function simply takes model and input dataframe, conducts timeseries train/test split, trains the model
+    and return predictions/errors
 
-    prediction = lr.predict(x_test)
+    :param model: ML model, in the given case there are mostly linear models
+    :param df: input dataframe to generate training and test data from
+    :return: value of mean absolute percentage error
+    """
+
+    x_train, x_test, y_train, y_test = train_test_split(df)
+    model.fit(x_train, y_train)
+
+    prediction = model.predict(x_test)
     error = mean_absolute_percentage_error(prediction, y_test)
 
     return error
 
+
+def optimal_leg_search_1d(start_lag, lag_range, data, model):
+    """
+
+    :param start_lag:
+    :param lag_range:
+    :param data:
+    :param model:
+    :return:
+    """
+    result_dict = {}
+    for j in lag_range:
+        key = (start_lag, j)
+        df = time_lags_generation(data, 1, j)
+        error = compute_model_error(model, df)
+
+        result_dict[key] = error
+
+    return result_dict

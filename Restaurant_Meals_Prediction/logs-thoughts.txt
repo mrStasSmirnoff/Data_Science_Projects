@@ -28,15 +28,30 @@ since there is not features introduced.
 
 I have to automate it.
 
+- v4 - the idea is to take only last 5 months, predominantly excluding pre-covid world. (Need to try also simply exclude Covid interval). The sample size in this case has been reduced from 800+ to 143.
+	However the time series became more linear. Hence it would make sense to test it.
+	
+	- lr: 11.63%; Lasso: 10.69 %
+	
+	If we exclude March, April and 15 days of May (data['date'] > '2020-05-15 00:00:00') | (data['date'] < '2020-03-01 00:00:00')	
+
+	- lr: 11.55%; Lasso: 11,41%
+
+
+- v5 - the idea is to generate Windows statistics functions, to generate more features.
+
+
+
+- Get from Marat data for a couple of others Bakeries in the same neighbourhood.
+- FB prophet is also a valid option to try
+	
 
 Possible Features to generate and investigate:
 
-Lags of time series
-
 Window statistics:
- Max/min value of series in a window
- Average/median value in a window
- Window variance
+Max/min value of series in a window
+Average/median value in a window
+Window variance
 
 Date and time features:
  Minute of an hour, hour of a day, day of the week, and so on
