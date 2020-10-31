@@ -62,7 +62,7 @@ def time_lags_generation(df, start, end):
     return df
 
 
-def compute_model_error(model, df):
+def train_and_val_model(model, df):
     """
     This function simply takes model and input dataframe, conducts timeseries train/test split, trains the model
     and return predictions/errors
