@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17e9a73-3f73-4d61-9157-350a228d3355" name="Default Changelist" comment="Continued with EDA" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1c05O15LIbhfEqUSODrlDSGHoTA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a17e9a73-3f73-4d61-9157-350a228d3355" name="Default Changelist" comment="" />
+      <created>1589652634965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589652634965</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Revert &quot;update libraries&quot;&#10;&#10;This reverts commit 6f1cc742">
+      <created>1592679849589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592679849589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Continued with EDA">
+      <created>1592683967129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592683967129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;update libraries&quot;&#10;&#10;This reverts commit 6f1cc742" />
+    <MESSAGE value="Continued with EDA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continued with EDA" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="597" y="354" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595014948613">
+      <screen x="0" y="23" width="1792" height="1043" />
+    </state>
+    <state x="597" y="354" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1043@0.23.1792.1043" timestamp="1595014948613" />
+    <state x="458" y="117" key="CommitChangelistDialog2" timestamp="1592679848623">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="458" y="117" key="CommitChangelistDialog2/0.23.1792.1042@0.23.1792.1042" timestamp="1592679848623" />
+    <state x="784" y="418" width="794" height="473" key="MultipleFileMergeDialog" timestamp="1592679647795">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="784" y="418" width="794" height="473" key="MultipleFileMergeDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1592679647795" />
+    <state x="397" y="182" key="SettingsEditor" timestamp="1592343502540">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="397" y="182" key="SettingsEditor/0.23.1792.1041@0.23.1792.1041" timestamp="1592343502540" />
+    <state x="496" y="284" key="Vcs.Push.Dialog.v2" timestamp="1592683969629">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="496" y="284" key="Vcs.Push.Dialog.v2/0.23.1792.1042@0.23.1792.1042" timestamp="1592683969629" />
+  </component>
+</project>
